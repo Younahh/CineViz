@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="./Style.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="ISO-8859-1">
+    <title>CineViz</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="Index.html">CINEVIZ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="Index.html">Objectif principal
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="generalite.html" role="button" aria-haspopup="true"
+                        aria-expanded="false">Vue Générale</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="generalite.html">Film & Revenus</a>
+                        <a class="dropdown-item" href="#viz1613960942920">Revenue Net</a>
+                        <a class="dropdown-item" href="#viz1613962310435">Revenue Net par Année</a>
+                        <a class="dropdown-item" href="#viz1613962535082">Vue sur Carte</a>
+                        <a class="dropdown-item" href="#viz1613962753035">Revenue Net (USA & UK)</a>
+                        <a class="dropdown-item" href="#viz1614011281218">Revenue Net par Prod</a>
+                        <a class="dropdown-item" href="#viz1614011401517">Taux de vote</a>
+                        <a class="dropdown-item" href="#viz1614011518917">Nombre de vue</a>
+                        <a class="dropdown-item" href="#viz1614011637205">Mois avec benéfice élevé</a>
+                        <a class="dropdown-item" href="#viz1614011803798">Total des Films</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="films-et-genres.html" role="button" aria-haspopup="true"
+                        aria-expanded="false">Films et genres de films</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item">Bénéfice</a>
+                        <a class="dropdown-item" href="#viz1614014289214">Genre avec le grand bénéfice</a>
+                        <a class="dropdown-item" href="#viz1614014316691">Classement</a>
+                        <a class="dropdown-item" href="#viz1614014345168">Popularité</a>
+                        <a class="dropdown-item" href="#viz1614014370958">Marge de bénefice</a>
+                        <a class="dropdown-item" href="#viz1614014408114">Top 15 Action (populaire)</a>
+                        <a class="dropdown-item" href="#viz1614014441200">Top 15 Comedy (populaire)</a>
+                        <a class="dropdown-item" href="#viz1614014474639">Top 15 Adventure (populaire)</a>
+                        <a class="dropdown-item" href="#viz1614014527435">Top 15 Drama (populaire)</a>
+                        <a class="dropdown-item" href="#viz1614014568294">Top 15 Action (vues)</a>
+                        <a class="dropdown-item" href="#viz1614014631895">Top 15 Adventure (vues)</a>
+                        <a class="dropdown-item" href="#viz1614014708049">Top 15 Drama (vues)</a>
+                        <a class="dropdown-item" href="#viz1614014964993">Top 15 Comedy (vues)</a>
+                        <a class="dropdown-item" href="#viz1614014998870">Top 15 Action (intéraction)</a>
+                        <a class="dropdown-item" href="#viz1614015040378">Top 15 Adventure (intéraction)</a>
+                        <a class="dropdown-item" href="#viz1614015090594">Top 15 Comedy (intéraction)</a>
+                        <a class="dropdown-item" href="#viz1614015147987">Top 15 Drama (intéraction)</a>
+                        <a class="dropdown-item" href="#viz1614015783201">Top Action (note)</a>
+                        <a class="dropdown-item" href="#viz1614015820756">Top Adventure (note)</a>
+                        <a class="dropdown-item" href="#viz1614015851563">Top Comedy (note)</a>
+                        <a class="dropdown-item" href="#viz1614015883478">Top Drama (note)</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="films-pour-enfants.html"
+                        role="button" aria-haspopup="true" aria-expanded="false">Films pour enfants</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#viz1614209094463">Total des films</a>
+                        <a class="dropdown-item" href="#viz1614209156359">total des titres</a>
+                        <a class="dropdown-item" href="#viz1614209377702">Top 20 Popularités&Revue</a>
+                        <a class="dropdown-item" href="#viz1614209443769">Top 20 vote & note</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class='ctn'>
+        <div class='box'>
+            <div class='conclusion'>
+                <h4>Problématique </h4>
+                <p>
+                    Notre Problématique c'est pouvoir définir un chréno pour les films d'animations pour enfants et voir
+                    si il est rentable ou pas.
+                    <br />
+                </p>
+            </div>
+            <hr />
+        </div>
+        <div>
+            <div class='tableauPlaceholder' id='viz1614209094463' style='position: relative'><noscript><a href='#'><img
+                            alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Yo&#47;YounessProblmatique&#47;RVRuVC&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='YounessProblmatique&#47;RVRuVC' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Yo&#47;YounessProblmatique&#47;RVRuVC&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                    <param name='filter' value='publish=yes' />
+                </object></div>
+            <script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1614209094463'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class='box'>
+                <p class='description'>
+                    On présente dans ce graphe combiné le total des films + Bénéfice + Revues + Vote pour un seul genre
+                    qui est <span>Animation</span>.
+                </p>
+                <hr />
+            </div>
+        </div>
+        <div>
+            <div class='tableauPlaceholder' id='viz1614209156359' style='position: relative'><noscript><a href='#'><img
+                            alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Yo&#47;YounessProblmatique&#47;total&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='YounessProblmatique&#47;total' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Yo&#47;YounessProblmatique&#47;total&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object></div>
+            <script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1614209156359'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class='box'>
+                <p class='description'>
+                    Sur un graphique en aires on présente le total des films, le bénéfice et le budget par rapport au
+                    années de notre source de données.
+                </p>
+                <hr />
+            </div>
+        </div>
+        <div class='box'>
+            <div class='conclusion'>
+                <h4>Petite Conclusion Récapitulative </h4>
+                <p>
+                    D’après ce qui a été vu précédemment on Constate que le genre d'animation est un genre trés rentable
+                    et la salle de cinéma peut s'investir a ce dernier.
+                    <br />
+                </p>
+            </div>
+            <hr />
+        </div>
+        <div>
+            <div class='tableauPlaceholder' id='viz1614209377702' style='position: relative'><noscript><a href='#'><img
+                            alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Yo&#47;YounessProblmatique&#47;Top20&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='YounessProblmatique&#47;Top20' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Yo&#47;YounessProblmatique&#47;Top20&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object></div>
+            <script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1614209377702'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class='box'>
+                <p class='description'>
+                    Présentation des 20 Films les plus populaires en indiquant pour chaqu'un d'eux la somme des revues.
+                </p>
+                <hr />
+            </div>
+        </div>
+        <div>
+            <div class='tableauPlaceholder' id='viz1614209443769' style='position: relative'><noscript><a href='#'><img
+                            alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Yo&#47;YounessProblmatique&#47;Top201&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='YounessProblmatique&#47;Top201' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Yo&#47;YounessProblmatique&#47;Top201&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object></div>
+            <script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1614209443769'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class='box'>
+                <p class='description'>
+                    Présentation des 20 Films aves le plus de vote a son égard en indiquant aussi la note de ce dernier.
+                </p>
+                <hr />
+            </div>
+        </div>
+        <div class='box'>
+            <div class='conclusion'>
+                <h4>Conclusion Générale </h4>
+                <p>
+                    On a vu de la premiere conclusion que le genre animation est rentable. Alors d'après ces deux graphe
+                    on peut spécifier les films qu'on peut les programmer au visionnage pour les enfants.<br />
+                    Les films sont ceux qui se retrouve dans les deux graphes on peut simplement les indiquer par leurs
+                    couleurs.
+                    <br />
+                </p>
+            </div>
+            <hr />
+        </div>
+    </div>
+
+</body>
+
+</html>

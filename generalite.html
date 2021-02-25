@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="./Style.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="ISO-8859-1">
+    <title>CineViz</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="Index.html">Cineviz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="Index.html">Objectif principal
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Vue Générale</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#viz1613756143592">Film & Revenus</a>
+                        <a class="dropdown-item" href="#viz1613960942920">Revenue Net</a>
+                        <a class="dropdown-item" href="#viz1613962310435">Revenue Net par Année</a>
+                        <a class="dropdown-item" href="#viz1613962535082">Vue sur Carte</a>
+                        <a class="dropdown-item" href="#viz1613962753035">Revenue Net (USA & UK)</a>
+                        <a class="dropdown-item" href="#viz1614011281218">Revenue Net par Prod</a>
+                        <a class="dropdown-item" href="#viz1614011401517">Taux de vote</a>
+                        <a class="dropdown-item" href="#viz1614011518917">Nombre de vue</a>
+                        <a class="dropdown-item" href="#viz1614011637205">Mois avec benéfice élevé</a>
+                        <a class="dropdown-item" href="#viz1614011803798">Total des Films</a>
+                        <a class="dropdown-item" href="#viz1614128092404">Top 10</a>
+                        <a class="dropdown-item" href="#viz1614128358934">Action 1</a>
+                        <a class="dropdown-item" href="#viz1614129181300">Top 10</a>
+                        <a class="dropdown-item" href="#viz1614128477859">Action 2</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"  href="films-et-genres.html" role="button"
+                        >Films et genres de films </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="problematique.html">Bénéfice</a>
+                        <a class="dropdown-item" href="#viz1614014289214">Genre avec le grand bénéfice</a>
+                        <a class="dropdown-item" href="#viz1614014316691">Classement</a>
+                        <a class="dropdown-item" href="#viz1614014345168">Popularité</a>
+                        <a class="dropdown-item" href="#viz1614014370958">Marge de bénefice</a>
+                        <a class="dropdown-item" href="#viz1614014408114">Top 15 Action (populaire)</a>
+                        <a class="dropdown-item" href="#viz1614014441200">Top 15 Comedy (populaire)</a>
+                        <a class="dropdown-item" href="#viz1614014474639">Top 15 Adventure (populaire)</a>
+                        <a class="dropdown-item" href="#viz1614014527435">Top 15 Drama (populaire)</a>
+                        <a class="dropdown-item" href="#viz1614014568294">Top 15 Action (vues)</a>
+                        <a class="dropdown-item" href="#viz1614014631895">Top 15 Adventure (vues)</a>
+                        <a class="dropdown-item" href="#viz1614014708049">Top 15 Drama (vues)</a>
+                        <a class="dropdown-item" href="#viz1614014964993">Top 15 Comedy (vues)</a>
+                        <a class="dropdown-item" href="#viz1614014998870">Top 15 Action (intéraction)</a>
+                        <a class="dropdown-item" href="#viz1614015040378">Top 15 Adventure (intéraction)</a>
+                        <a class="dropdown-item" href="#viz1614015090594">Top 15 Comedy (intéraction)</a>
+                        <a class="dropdown-item" href="#viz1614015147987">Top 15 Drama (intéraction)</a>
+                        <a class="dropdown-item" href="#viz1614015783201">Top Action (note)</a>
+                        <a class="dropdown-item" href="#viz1614015820756">Top Adventure (note)</a>
+                        <a class="dropdown-item" href="#viz1614015851563">Top Comedy (note)</a>
+                        <a class="dropdown-item" href="#viz1614015883478">Top Drama (note)</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="films-pour-enfants.html" 
+                        >Films pour enfants</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#viz1614209094463">Total des films</a>
+                        <a class="dropdown-item" href="#viz1614209156359">total des titres</a>
+                        <a class="dropdown-item" href="#viz1614209377702">Top 20 Popularités&Revue</a>
+                        <a class="dropdown-item" href="#viz1614209443769">Top 20 vote & note</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class='ctn'>
+        <h1 class="title">Généralités</h1>
+
+        <div>
+            <div class='tableauPlaceholder' id='viz1613756143592' style='position: relative'>
+                <noscript>
+                    <a href='#'><img alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;FlmsRevenueAnne&#47;1_rss.png'
+                            style='border: none' /></a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Gnralits&#47;FlmsRevenueAnne' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;FlmsRevenueAnne&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1613756143592');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+            <div class='box'>
+                <p class='description'>
+                    On commence par une representation en utilisant les graphique en aires double pour le visionnage des
+                    totals des films avec leurs revenus sur chaque années<br />
+                    Ce qui nous donne une montée de films et de bénéfice entre les années 2013 & 2016.
+                </p>
+                <hr />
+            </div>
+        </div>
+
+        <div>
+            <div class='tableauPlaceholder' id='viz1614011637205' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;Plusderevenuparmois&#47;1_rss.png'
+                            style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Gnralits&#47;Plusderevenuparmois' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;Plusderevenuparmois&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1614011637205');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+            <div class='box'>
+                <p class='description'>
+                    Vue l'augmentation des nombres de films et totals de bénéfice sur les dernieres années. Pourquoi ne
+                    pas voir le bénéfice en spécifiant les mois pour avoir une idée sur les mois qui ont le plus grands
+                    bénéfice.<br />
+                    En vue de cette graphe on voit que le mois qui a le plus gros pig sur les années spécifié
+                    <span>C'est le mois de Juin</span>.
+                </p>
+                <hr />
+            </div>
+        </div>
+
+        <div>
+            <div class='tableauPlaceholder' id='viz1613960942920' style='position: relative'>
+                <noscript>
+                    <a href='#'><img alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;RNPays&#47;1_rss.png'
+                            style='border: none' /></a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Gnralits&#47;RNPays' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;RNPays&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1613960942920');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+            <div class='box'>
+                <p class='description'>
+                    Ici on représente les différents pays avec leurs bénéfices et on constate que <span>United States of
+                        America</span> prends la part du lion de plus grand bénéfice entre les différents pays.
+                </p>
+                <hr />
+            </div>
+        </div>
+
+        <div>
+            <div class='tableauPlaceholder' id='viz1613962310435' style='position: relative'>
+                <noscript>
+                    <a href='#'><img alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;RNAnnes&#47;1_rss.png'
+                            style='border: none' /></a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Gnralits&#47;RNAnnes' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;RNAnnes&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1613962310435');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+            <div class='box'>
+                <p class='description'>
+                    La même chose mais cette fois ci on parourt cela avec les années, c'est la même chose la parties du
+                    lion pour chaque années est pour <span>United State of America.</span>
+                </p>
+                <hr />
+            </div>
+        </div>
+
+        <div>
+            <div class='tableauPlaceholder' id='viz1613962535082' style='position: relative'>
+                <noscript>
+                    <a href='#'><img alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;VuesurCarte&#47;1_rss.png'
+                            style='border: none' /></a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='path'
+                        value='views&#47;Gnralits&#47;VuesurCarte?:language=fr&amp;:embed=y&amp;:display_count=y' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;VuesurCarte&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1613962535082');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+            <div class='box'>
+                <p class='description'>
+                    Même conception mais cette fois ci on utilise la vue sur carte en annimant ce dernier par les
+                    années.
+                </p>
+                <hr />
+            </div>
+        </div>
+
+        <div>
+            <div class='tableauPlaceholder' id='viz1613962753035' style='position: relative'>
+                <noscript>
+                    <a href='#'><img alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;RNUSAUKYear&#47;1_rss.png'
+                            style='border: none' /></a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Gnralits&#47;RNUSAUKYear' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;RNUSAUKYear&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1613962753035');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+            <div class='box'>
+                <p class='description'>
+                    Vue que le plus grands bénéfice se partage entre <span>United State of America</span> et
+                    <span>United Kingdom</span>.<br />
+                    On veut prendre un petit clin d'oeil sur la différence entre les deux pays, et le résultat est
+                    présenté comme suit.
+                </p>
+                <hr />
+            </div>
+        </div>
+
+        <div>
+            <div class='tableauPlaceholder' id='viz1614011281218' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;RNPC&#47;1_rss.png'
+                            style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Gnralits&#47;RNPC' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;RNPC&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1614011281218');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+            <div class='box'>
+                <div class='description'>
+                    <p>
+                        Ce graphe représente les <span>Maison de production</span> qui ont le plus grand bénéfice.<br />
+                        Les deux premier sont:
+                    </p>
+                    <ul>
+                        <li>Paramount Pictures</li>
+                        <li>Universal Pictures</li>
+                    </ul>
+                </div>
+                <hr />
+            </div>
+        </div>
+
+        <div>
+            <div class='tableauPlaceholder' id='viz1614011401517' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;TVPC&#47;1_rss.png'
+                            style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Gnralits&#47;TVPC' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;TVPC&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1614011401517');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+            <div class='box'>
+                <p class='description'>
+                    Passant maintenant au <span>Taux de votes</span> par <span>Société de Production</span>, et on
+                    constate que les deux sociétés de production qui ont le plus grands bénéfice ont aussi le plus gros
+                    <span>Taux de votes</span>.
+                </p>
+                <hr />
+            </div>
+        </div>
+
+        <div>
+            <div class='tableauPlaceholder' id='viz1614011518917' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;RuntimeGenre&#47;1_rss.png'
+                            style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Gnralits&#47;RuntimeGenre' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;RuntimeGenre&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1614011518917');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+            <div class='box'>
+                <div class='description'>
+                    <p>
+                        l'Avant derniére graphe présente pour chaque genre de film la somme des revues trié de plus grand
+                        au plus petit.<br />
+                        Les trois genres les plus revues sont:
+                    </p>
+                    <ul>
+                        <li>Drama</li>
+                        <li>Action</li>
+                        <li>Comedy</li>
+                    </ul>
+                </div>
+                <hr />
+            </div>
+        </div>
+
+        <div>
+            <div class='tableauPlaceholder' id='viz1614011803798' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;RatingFilm&#47;1_rss.png'
+                            style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Gnralits&#47;RatingFilm' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gn&#47;Gnralits&#47;RatingFilm&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1614011803798');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+            <div class='box'>
+                <p class='description'>
+                    Derniérement on réalise une vue sur carte qui présente pour chaque pays le nombre totale de films et
+                    la moyenne des votes obtenue une par la taille et l'autre par les couleurs.
+                </p>
+                <hr />
+            </div>
+        </div>
+        <h2 class="title1">Présentation des Actions</h2>
+        <div>
+            <div class='tableauPlaceholder' id='viz1614128092404' style='position: relative'><noscript><a href='#'><img
+                            alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProblmatiqueYouness&#47;Top10&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='ProblmatiqueYouness&#47;Top10' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProblmatiqueYouness&#47;Top10&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object></div>
+            <script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1614128092404'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class='box'>
+                <p class='description'>
+                    On présente maintenant un graphe composé de trois differents graphes qui se relie entre eux en
+                    utilisant des actions.<br />
+                    La premier exécute la redirection vers un autre graphe qui spécifie les genres dominants pour chaque
+                    sociétés de production.
+                </p>
+                <hr />
+            </div>
+        </div>
+        <div>
+            <div class='tableauPlaceholder' id='viz1614128358934' style='position: relative'><noscript><a href='#'><img
+                            alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProblmatiqueYouness&#47;Action1&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='ProblmatiqueYouness&#47;Action1' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProblmatiqueYouness&#47;Action1&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object></div>
+            <script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1614128358934'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class='box'>
+                <p class='description'>
+                    Ensemble des genres dominants pour chaque sociéte de prodcution.
+                </p>
+                <hr />
+            </div>
+        </div>
+        <div>
+            <div class='tableauPlaceholder' id='viz1614129181300' style='position: relative'><noscript><a href='#'><img
+                            alt='Top 10 des Sociétes de productions par rapport au nombre de genre '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NQ&#47;NQXNKNDTY&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='path' value='shared&#47;NQXNKNDTY' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NQ&#47;NQXNKNDTY&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object></div>
+            <script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1614129181300'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class='box'>
+                <p class='description'>
+                    La même chose (un graphe composé de trois differents graphes qui se relie entre eux en utilisant des
+                    actions).<br />
+                    La deuxiéme exécute la redirection vers un autre graphe qui affiche une vue sur carte en montrant la
+                    disponibilités des pays pour chaque société de production.
+                </p>
+                <hr />
+            </div>
+        </div>
+        <div>
+            <div class='tableauPlaceholder' id='viz1614128477859' style='position: relative'><noscript><a href='#'><img
+                            alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProblmatiqueYouness&#47;Action2&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='ProblmatiqueYouness&#47;Action2' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProblmatiqueYouness&#47;Action2&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr' />
+                </object></div>
+            <script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1614128477859'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class='box'>
+                <p class='description'>
+                    Pour chaque société de production on visualise sa distribution sur carte
+                </p>
+                <hr />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

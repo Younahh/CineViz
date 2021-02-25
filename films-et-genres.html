@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="./Style.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="ISO-8859-1">
+    <title>CineViz</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="Index.html">Cineviz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="Index.html">Objectif principal
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="generalite.html" role="button"
+                        aria-haspopup="true" aria-expanded="false">Vue Général</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="generalite.html">Film & Revenus</a>
+                        <a class="dropdown-item" href="#viz1613960942920">Revenue Net</a>
+                        <a class="dropdown-item" href="#viz1613962310435">Revenue Net par Année</a>
+                        <a class="dropdown-item" href="#viz1613962535082">Vue sur Carte</a>
+                        <a class="dropdown-item" href="#viz1613962753035">Revenue Net (USA & UK)</a>
+                        <a class="dropdown-item" href="#viz1614011281218">Revenue Net par Prod</a>
+                        <a class="dropdown-item" href="#viz1614011401517">Taux de vote</a>
+                        <a class="dropdown-item" href="#viz1614011518917">Nombre de vue</a>
+                        <a class="dropdown-item" href="#viz1614011637205">Mois avec benéfice élevé</a>
+                        <a class="dropdown-item" href="#viz1614011803798">Total des Films</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Films et genres films</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#viz1614014289214">Genre avec le grand bénéfice</a>
+                        <a class="dropdown-item" href="#viz1614014316691">Classement</a>
+                        <a class="dropdown-item" href="#viz1614014345168">Popularité</a>
+                        <a class="dropdown-item" href="#viz1614014370958">Marge de bénefice</a>
+                        <a class="dropdown-item" href="#viz1614014408114">Top 15 Action (populaire)</a>
+                        <a class="dropdown-item" href="#viz1614014568294">Top 15 Action (vues)</a>
+                        <a class="dropdown-item" href="#viz1614014998870">Top 15 Action (intéraction)</a>
+                        <a class="dropdown-item" href="#viz1614015783201">Top Action (note)</a>
+                        <a class="dropdown-item" href="#viz1614014441200">Top 15 Comedy (populaire)</a>
+                        <a class="dropdown-item" href="#viz1614014964993">Top 15 Comedy (vues)</a>
+                        <a class="dropdown-item" href="#viz1614015090594">Top 15 Comedy (intéraction)</a>
+                        <a class="dropdown-item" href="#viz1614015851563">Top Comedy (note)</a>
+                        <a class="dropdown-item" href="#viz1614014474639">Top 15 Adventure (populaire)</a>
+                        <a class="dropdown-item" href="#viz1614014631895">Top 15 Adventure (vues)</a>
+                        <a class="dropdown-item" href="#viz1614015040378">Top 15 Adventure (intéraction)</a>
+                        <a class="dropdown-item" href="#viz1614015820756">Top Adventure (note)</a>
+                        <a class="dropdown-item" href="#viz1614014527435">Top 15 Drama (populaire)</a>
+                        <a class="dropdown-item" href="#viz1614014708049">Top 15 Drama (vues)</a>
+                        <a class="dropdown-item" href="#viz1614015147987">Top 15 Drama (intéraction)</a>
+                        <a class="dropdown-item" href="#viz1614015883478">Top Drama (note)</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"href="films-pour-enfants.html" role="button"
+                        >films pour enfants</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#viz1614209094463">Total des films</a>
+                        <a class="dropdown-item" href="#viz1614209156359">total des titres</a>
+                        <a class="dropdown-item" href="#viz1614209377702">Top 20 Popularités&Revue</a>
+                        <a class="dropdown-item" href="#viz1614209443769">Top 20 vote & note</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class='ctn'>
+        <h1 class="title">Etudes de faisabilité</h1>
+        <div>
+            <h2 class="title1">Genre de films: Vue générale</h2>
+            <div>
+                <div class='tableauPlaceholder' id='viz1614014289214' style='position: relative'><noscript><a
+                            href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;TopRNgenre&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Problmatique1&#47;TopRNgenre' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;TopRNgenre&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='fr' />
+                    </object></div>
+                <script
+                    type='text/javascript'>                    var divElement = document.getElementById('viz1614014289214'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div class='box'>
+                    <p class='description'>
+                        Classement des genres des films présentés dans notre dataset, et ce par ordre décroissant.
+                    </p>
+                    <hr />
+                </div>
+            </div>
+
+            <div>
+                <div class='tableauPlaceholder' id='viz1614014316691' style='position: relative'><noscript><a
+                            href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Genreruntime&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Problmatique1&#47;Genreruntime' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Genreruntime&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='fr' />
+                    </object></div>
+                <script
+                    type='text/javascript'>                    var divElement = document.getElementById('viz1614014316691'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div class='box'>
+                    <p class='description'>
+                        Ce graphe met en valeur le classement de chaque genre de films selon le nombre total de vues
+                        des utlisateurs. <br /> Depuis ce graphe on constate que le genre <span>« Drama »</span> est le
+                        genre de films
+                        le plus vue parmi tous les genres présents, suivi par <span>« Action », « Comedy », « Adventure
+                            ».</span>
+                    </p>
+                    <hr />
+                </div>
+            </div>
+
+            <div>
+                <div class='tableauPlaceholder' id='viz1614014345168' style='position: relative'><noscript><a
+                            href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;popularityratinggenre&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Problmatique1&#47;popularityratinggenre' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;popularityratinggenre&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='fr' />
+                    </object></div>
+                <script
+                    type='text/javascript'>                    var divElement = document.getElementById('viz1614014345168'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div class='box'>
+                    <div class='description'>
+                        <p>
+                            Œil sur les différents genres selon leur popularité.<br />
+                            Le genre <span>« Action »</span> prend la plus grande part avec <span>21,72%</span>, suivi
+                            par
+                            <span>« Drama » </span>avec <span>17,93%</span>,
+                            <span>« Comedy » </span>avec <span>13,74%</span>, etc..<br />
+                        </p>
+                        Les genres les moins populaires sont :<br />
+                        <ul>
+                            <li> Crime : 3.79%</li>
+                            <li> Thriller : 3.93%</li>
+                            <li> Fantasy : 4%</li>
+                        </ul>
+                    </div>
+                    <hr />
+                </div>
+            </div>
+
+            <div>
+                <div class='tableauPlaceholder' id='viz1614014370958' style='position: relative'><noscript><a
+                            href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;RNPCG&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Problmatique1&#47;RNPCG' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;RNPCG&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='fr' />
+                    </object></div>
+                <script
+                    type='text/javascript'>                    var divElement = document.getElementById('viz1614014370958'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div class='box'>
+                    <p class='description'>
+                        Vue par ordre décroissant sur les tops sociétés de production en fonction des revenues net et la
+                        rentabilité de
+                        chaque genre de films.
+                    </p>
+                    <hr />
+                </div>
+            </div>
+
+            <div class='box'>
+                <div class='conclusion'>
+                    <h4>Petite Conclusion Récapitulative </h4>
+                    <p>
+                        D’après ce qui a été vu précédemment on va se focaliser sur les 4 genres de films suivants :
+                        <br />
+                    </p>
+                    <ul>
+                        <li>Action</li>
+                        <li>Drama</li>
+                        <li>Comédie</li>
+                        <li>Adventure</li>
+                    </ul>
+                </div>
+                <hr />
+            </div>
+        </div>
+
+        <div>
+            <h2 class="title1">Genre de films Vue détaillée</h2>
+            <div>
+                <hr />
+                <h3>1- GENRE ACTION : </h3>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614014408114' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Ac&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;Top15Ac' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Ac&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614014408114'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les 15 films d’actions les plus populaires.
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614014568294' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Ac2&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;Top15Ac2' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Ac2&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614014568294'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les 15 films d’action les plus vues triées par ordre décroissant.
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614014998870' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Ac3&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;Top15Ac3' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Ac3&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614014998870'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les 15 films d’action avec le plus d’interactions (nombre de votes)
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614015783201' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;TopAc4&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;TopAc4' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;TopAc4&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614015783201'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les films qui ont une note supérieure à 7,5
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <hr />
+                <h3>2- GENRE COMEDIE : </h3>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614014441200' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Co&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;Top15Co' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Co&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614014441200'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les 15 films de comédies les plus populaires.
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614014964993' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Co2&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;Top15Co2' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Co2&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614014964993'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les 15 films de comédie les plus vues triées par ordre décroissant.
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614015090594' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Co3&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;Top15Co3' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Co3&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614015090594'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les 15 films d’action avec le plus d’interactions (nombre de votes)
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614015851563' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;TopCo4&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;TopCo4' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;TopCo4&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614015851563'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les films qui ont une note supérieure à 7,5
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <hr />
+                <h3>3- GENRE ADVENTURE : </h3>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614014474639' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Ad&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;Top15Ad' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Ad&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614014474639'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les 15 films d’aventures les plus populaires.
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614014631895' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Ad2&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;Top15Ad2' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Ad2&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614014631895'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les 15 films d’aventure les plus vues triées par ordre décroissant.
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614015040378' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Ad3&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;Top15Ad3' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Ad3&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614015040378'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les 15 films d’aventure avec le plus d’interactions (nombre de votes)
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614015820756' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;TopAd4&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;TopAd4' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;TopAd4&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614015820756'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les films qui ont une note supérieure à 7,5
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <hr />
+                <h3>4- GENRE DRAMA : </h3>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614014527435' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Dr&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;Top15Dr' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Dr&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614014527435'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les 15 films de Drama les plus populaires.
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614014708049' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Dr2&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;Top15Dr2' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Dr2&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614014708049'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les 15 films de Drama les plus vues triées par ordre décroissant.
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614015147987' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Dr3&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;Top15Dr3' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;Top15Dr3&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614015147987'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les 15 films de Drama avec le plus d’interactions (nombre de votes)
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div>
+                    <div class='tableauPlaceholder' id='viz1614015883478' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;TopDr4&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Problmatique1&#47;TopDr4' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Problmatique1&#47;TopDr4&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='fr' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1614015883478'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='box'>
+                        <p class='description'>
+                            Les films qui ont une note supérieure à 7,5
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
