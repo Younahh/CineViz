@@ -30,4 +30,4 @@ statistiques et les résultats trouvés.
 
 
 # Lien:
-"https://younahh.github.io/CineViz/index.html"
+https://younahh.github.io/CineViz/index.html
