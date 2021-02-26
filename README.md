@@ -27,3 +27,7 @@ L'objectif est d'avoir un total de quatres genres de films.
 Dans cette section, on va essayer d'analyser et d'étudier les films d'animations (Revenues, popularité, croissance, nombre de vues, ..etc), pour sortir en fin de compte avec 
 le résultat qui va nous permettre de soit trouver et ajouter un créneau pour ainsi diffuser les films d'animations ou bien de zapper et ignorer ce genre de films vu les 
 statistiques et les résultats trouvés.
+
+
+# Lien:
+"https://younahh.github.io/CineViz/index.html"
