@@ -1,218 +1,214 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <link href="./Style.css" rel="stylesheet" />
-    <link href="bootstrap.css" rel="stylesheet" />
-    <link href="bootstrap.min.css" rel="stylesheet" />
-    <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
-    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <meta charset="ISO-8859-1" />
-    <title>CineViz</title>
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="index.html">CINEVIZ</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarColor01"
-        aria-controls="navbarColor01"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<head>
+  <meta charset="UTF-8" />
+  <link href="./Style.css" rel="stylesheet" />
+  <link href="bootstrap.css" rel="stylesheet" />
+  <link href="bootstrap.min.css" rel="stylesheet" />
+  <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+  <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="ISO-8859-1" />
+  <title>CineViz</title>
+</head>
 
-      <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"
-              >Objectif principal
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="generalite.html"
-              role="button"
-              
-              >Vue Générale</a
-            >
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="generalite.html">Film & Revenus</a>
-              <a class="dropdown-item" href="#viz1613960942920">Revenue Net</a>
-              <a class="dropdown-item" href="#viz1613962310435"
-                >Revenue Net par Année</a
-              >
-              <a class="dropdown-item" href="#viz1613962535082"
-                >Vue sur Carte</a
-              >
-              <a class="dropdown-item" href="#viz1613962753035"
-                >Revenue Net (USA & UK)</a
-              >
-              <a class="dropdown-item" href="#viz1614011281218"
-                >Revenue Net par Prod</a
-              >
-              <a class="dropdown-item" href="#viz1614011401517">Taux de vote</a>
-              <a class="dropdown-item" href="#viz1614011518917"
-                >Nombre de vue</a
-              >
-              <a class="dropdown-item" href="#viz1614011637205"
-                >Mois avec benéfice élevé</a
-              >
-              <a class="dropdown-item" href="#viz1614011803798"
-                >Total des Films</a
-              >
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="films-et-genres.html"
-              role="button"
-              
-              >Films et genres de films</a
-            >
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="problematique.html">Bénéfice</a>
-              <a class="dropdown-item" href="#viz1614014289214"
-                >Genre avec le grand bénéfice</a
-              >
-              <a class="dropdown-item" href="#viz1614014316691">Classement</a>
-              <a class="dropdown-item" href="#viz1614014345168">Popularité</a>
-              <a class="dropdown-item" href="#viz1614014370958"
-                >Marge de bénefice</a
-              >
-              <a class="dropdown-item" href="#viz1614014408114"
-                >Top 15 Action (populaire)</a
-              >
-              <a class="dropdown-item" href="#viz1614014441200"
-                >Top 15 Comedy (populaire)</a
-              >
-              <a class="dropdown-item" href="#viz1614014474639"
-                >Top 15 Adventure (populaire)</a
-              >
-              <a class="dropdown-item" href="#viz1614014527435"
-                >Top 15 Drama (populaire)</a
-              >
-              <a class="dropdown-item" href="#viz1614014568294"
-                >Top 15 Action (vues)</a
-              >
-              <a class="dropdown-item" href="#viz1614014631895"
-                >Top 15 Adventure (vues)</a
-              >
-              <a class="dropdown-item" href="#viz1614014708049"
-                >Top 15 Drama (vues)</a
-              >
-              <a class="dropdown-item" href="#viz1614014964993"
-                >Top 15 Comedy (vues)</a
-              >
-              <a class="dropdown-item" href="#viz1614014998870"
-                >Top 15 Action (intéraction)</a
-              >
-              <a class="dropdown-item" href="#viz1614015040378"
-                >Top 15 Adventure (intéraction)</a
-              >
-              <a class="dropdown-item" href="#viz1614015090594"
-                >Top 15 Comedy (intéraction)</a
-              >
-              <a class="dropdown-item" href="#viz1614015147987"
-                >Top 15 Drama (intéraction)</a
-              >
-              <a class="dropdown-item" href="#viz1614015783201"
-                >Top Action (note)</a
-              >
-              <a class="dropdown-item" href="#viz1614015820756"
-                >Top Adventure (note)</a
-              >
-              <a class="dropdown-item" href="#viz1614015851563"
-                >Top Comedy (note)</a
-              >
-              <a class="dropdown-item" href="#viz1614015883478"
-                >Top Drama (note)</a
-              >
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="films-pour-enfants.html"
-              role="button"
-             
-              >Films pour enfants</a
-            >
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="films-pour-enfants.html"
-                >Total des films</a
-              >
-              <a class="dropdown-item" href="#">total des titres</a>
-              <a class="dropdown-item" href="#">Top 20 Popularités&Revue</a>
-              <a class="dropdown-item" href="#">Top 20 vote & note</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html">CINEVIZ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div class="container">
-      <div>
-        <h1 class="title">Objectif Principal</h1>
-      </div>
-      <div>
-        <p>L'idée de la réalisation de cette présentation consiste à faire une étude sur le monde du cinèma, les maisons de productions, les films, 
-            les genres de films, les revenues, ...etc<br/>
-            Après la réalisation de cette étude, nous aurons une idée plus ou moins précise sur la mise en oeuvre du projet principal, qui est l'ouverture d'une salle de cinèma qui fait passer et diffuser les films les plus populaires dans l'histoire du cinéma toute entière.
-            <br/>Une fois l'étude est mise en oeuvre, nous pourrons définir:
-            <ul>
-                <li>Les genres de films à choisir.</li>
-                <li>Les films qui seront diffusés au cinéma, et ce, en fonction des genres choisis précédemment.</li>
-                <li>Un créneau pour les films et leurs genres.</li>
-                <li>Un créneau pour les films d'animations dediés aux enfants (vu leurs resultats et statistiques).</li>
-            </ul>
-
-        </p>
-      </div>
-      <div >
-        <a href="generalite.html"><h4>Premier objectif: Vue et étude générale sur le monde du cinèma</h4></a>
-        <p>
-          Cet objectif consiste à avoir des idées concernant le monde du cinema en général. <br/>
-          Avoir une idée et informations générales sur: 
-          <ul>
-              <li>
-                Le cinèma dans différents pays.
-              </li>
-              <li>
-                Les maisons de production.
-            </li>
-            <li>
-                Films, genres de films et leurs croissances.
-            </li>
-            <li>
-              Etc...
-          </li>
-          </ul>
-        </p>
-        <a href="films-et-genres.html"><h4>Deuxième objectif: Vue sur les films et leurs genres</h4></a>
-        <p>
-          Cet objectif consiste à avoir des idées concernant les genres de films
-          les plus rentables, les plus populaires, les genres avec le plus de
-          votes ainsi que les mieux notés. <br/>L'idée est d'avoir les genres de
-          films sur lesquelles on va se baser pour se décider des films qu'on va
-          passer dans notre cinéma.<br/>
-          L'objectif est d'avoir un total de quatres genres de films.
-        </p>
-
-        <a href="films-pour-enfants.html"><h4>Troisième objectif: Les petits enfants ont aussi le droit !</h4></a>
-        <p>
-          Dans cette section, on va essayer d'analyser et d'étudier les films d'animations (Revenues, popularité, croissance, nombre de vues, ..etc), 
-          pour sortir en fin de compte avec le résultat qui va nous permettre de soit trouver et ajouter un créneau pour ainsi diffuser les films d'animations ou bien de zapper et ignorer ce genre de films vu les statistiques et les résultats trouvés.  <br/>
-
-        </p>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Objectif principal
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="generalite.html" role="button">Vue Générale</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="generalite.html">Film & Revenus</a>
+            <a class="dropdown-item" href="#viz1613960942920">Revenue Net</a>
+            <a class="dropdown-item" href="#viz1613962310435">Revenue Net par Année</a>
+            <a class="dropdown-item" href="#viz1613962535082">Vue sur Carte</a>
+            <a class="dropdown-item" href="#viz1613962753035">Revenue Net (USA & UK)</a>
+            <a class="dropdown-item" href="#viz1614011281218">Revenue Net par Prod</a>
+            <a class="dropdown-item" href="#viz1614011401517">Taux de vote</a>
+            <a class="dropdown-item" href="#viz1614011518917">Nombre de vue</a>
+            <a class="dropdown-item" href="#viz1614011637205">Mois avec benéfice élevé</a>
+            <a class="dropdown-item" href="#viz1614011803798">Total des Films</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="films-et-genres.html" role="button">Films et genres de films</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="problematique.html">Bénéfice</a>
+            <a class="dropdown-item" href="#viz1614014289214">Genre avec le grand bénéfice</a>
+            <a class="dropdown-item" href="#viz1614014316691">Classement</a>
+            <a class="dropdown-item" href="#viz1614014345168">Popularité</a>
+            <a class="dropdown-item" href="#viz1614014370958">Marge de bénefice</a>
+            <a class="dropdown-item" href="#viz1614014408114">Top 15 Action (populaire)</a>
+            <a class="dropdown-item" href="#viz1614014441200">Top 15 Comedy (populaire)</a>
+            <a class="dropdown-item" href="#viz1614014474639">Top 15 Adventure (populaire)</a>
+            <a class="dropdown-item" href="#viz1614014527435">Top 15 Drama (populaire)</a>
+            <a class="dropdown-item" href="#viz1614014568294">Top 15 Action (vues)</a>
+            <a class="dropdown-item" href="#viz1614014631895">Top 15 Adventure (vues)</a>
+            <a class="dropdown-item" href="#viz1614014708049">Top 15 Drama (vues)</a>
+            <a class="dropdown-item" href="#viz1614014964993">Top 15 Comedy (vues)</a>
+            <a class="dropdown-item" href="#viz1614014998870">Top 15 Action (intéraction)</a>
+            <a class="dropdown-item" href="#viz1614015040378">Top 15 Adventure (intéraction)</a>
+            <a class="dropdown-item" href="#viz1614015090594">Top 15 Comedy (intéraction)</a>
+            <a class="dropdown-item" href="#viz1614015147987">Top 15 Drama (intéraction)</a>
+            <a class="dropdown-item" href="#viz1614015783201">Top Action (note)</a>
+            <a class="dropdown-item" href="#viz1614015820756">Top Adventure (note)</a>
+            <a class="dropdown-item" href="#viz1614015851563">Top Comedy (note)</a>
+            <a class="dropdown-item" href="#viz1614015883478">Top Drama (note)</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="films-pour-enfants.html" role="button">Films pour enfants</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="films-pour-enfants.html">Total des films</a>
+            <a class="dropdown-item" href="#">Total des titres</a>
+            <a class="dropdown-item" href="#">Top 20 Popularités&Revue</a>
+            <a class="dropdown-item" href="#">Top 20 vote & note</a>
+          </div>
+        </li>
+      </ul>
     </div>
-  </body>
+  </nav>
+
+  <div class="container">
+    <div>
+      <h1 class="title">Objectif Principal</h1>
+    </div>
+    <div>
+      <p>L'idée de la réalisation de cette présentation consiste à faire une étude sur le monde du cinèma, les maisons
+        de productions, les films,
+        les genres de films, les revenues, ...etc<br />
+        Après la réalisation de cette étude, nous aurons une idée plus ou moins précise sur la mise en oeuvre du projet
+        principal, qui est l'ouverture d'une salle de cinèma qui fait passer et diffuser les films les plus populaires
+        dans l'histoire du cinéma toute entière.
+        <br />Une fois l'étude est mise en oeuvre, nous pourrons définir:
+      <ul>
+        <li>Les genres de films à choisir.</li>
+        <li>Les films qui seront diffusés au cinéma, et ce, en fonction des genres choisis précédemment.</li>
+        <li>Un créneau pour les films et leurs genres.</li>
+        <li>Un créneau pour les films d'animations dediés aux enfants (vu leurs resultats et statistiques).</li>
+      </ul>
+
+      </p>
+    </div>
+    <div>
+      <a href="generalite.html">
+        <h4>Premier objectif: Vue et étude générale sur le monde du cinèma</h4>
+      </a>
+      <p>
+        Cet objectif consiste à avoir des idées concernant le monde du cinema en général. <br />
+        Avoir une idée et informations générales sur:
+      <ul>
+        <li>
+          Le cinèma dans différents pays.
+        </li>
+        <li>
+          Les maisons de production.
+        </li>
+        <li>
+          Films, genres de films et leurs croissances.
+        </li>
+        <li>
+          Etc...
+        </li>
+      </ul>
+      </p>
+      <a href="films-et-genres.html">
+        <h4>Deuxième objectif: Vue sur les films et leurs genres</h4>
+      </a>
+      <p>
+        Cet objectif consiste à avoir des idées concernant les genres de films
+        les plus rentables, les plus populaires, les genres avec le plus de
+        votes ainsi que les mieux notés. <br />L'idée est d'avoir les genres de
+        films sur lesquelles on va se baser pour se décider des films qu'on va
+        passer dans notre cinéma.<br />
+        L'objectif est d'avoir un total de quatres genres de films.
+      </p>
+
+      <a href="films-pour-enfants.html">
+        <h4>Troisième objectif: Les petits enfants ont aussi le droit !</h4>
+      </a>
+      <p>
+        Dans cette section, on va essayer d'analyser et d'étudier les films d'animations (Revenues, popularité,
+        croissance, nombre de vues, ..etc),
+        pour sortir en fin de compte avec le résultat qui va nous permettre de soit trouver et ajouter un créneau pour
+        ainsi diffuser les films d'animations ou bien de zapper et ignorer ce genre de films vu les statistiques et les
+        résultats trouvés. <br />
+
+      </p>
+    </div>
+
+    <div class="conclusion">
+      <h2>Finalité </h2>
+      <p>Les genres de films à l'affiche d'aprés l'étude et les statistiques obtenu par les deux premières
+        problématiques
+      <ul>
+        <li>
+          Films d'actions: <b>32%</b>
+        </li>
+        <li>
+          Films Drama: 27%
+        </li>
+        <li>
+          Films de comédie: 21%
+        </li>
+        <li>
+          Films d'aventure: 20%
+        </li>
+      </ul>
+      </p>
+      <p>Après l'ajout des films d'animations pour les enfants, les parts de chaque genre de films, et ce, par prorata
+        deviennent:
+      <ul>
+        <li>
+          Films d'actions: 30%
+        </li>
+        <li>
+          Films Drama: 25%
+        </li>
+        <li>
+          Films de comédie: 19%
+        </li>
+        <li>
+          Films d'aventure: 18%
+        </li>
+        <li>
+          Films d'animation: 8%
+        </li>
+      </ul>
+      </p>
+      <p>En prenant en considération la programmation chaque semaine de 44 séances par salle, on aura:
+      <ul>
+        <li>
+          Films d'actions: 13 séances.
+        </li>
+        <li>
+          Films Drama: 11 séances.
+        </li>
+        <li>
+          Films de comédie: 8 séances.
+        </li>
+        <li>
+          Films d'aventure: 8 séances.
+        </li>
+        <li>
+          Films d'animation: 4 séances (programmées pour Samedi/Dimanche).
+        </li>
+      </ul>
+      </p>
+    </div>
+  </div>
+</body>
+
 </html>
